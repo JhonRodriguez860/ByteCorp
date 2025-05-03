@@ -29,6 +29,4 @@ def soptec():
 def cotweb():
     return render_template('cotweb.html')
 
-#Identificar ejecutable
-if __name__ == '__main__':
-    app.run(debug=True)
+
