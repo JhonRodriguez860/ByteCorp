@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 #objeto app
-app=Flask(__name__)
+app= Flask (__name__)
 
 #ruta llamado paginas
 #llamar layout
