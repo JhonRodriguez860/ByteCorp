@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h2>Rentas</h2>
+        <p style="font-size: 18px;">
+            En <strong>ByteCorp</strong>, ofrecemos un servicio de <strong>renta de computadoras</strong> para que tengas acceso a equipos de alto rendimiento sin la necesidad de comprarlos.
+            Perfecto para estudiantes, profesionales, empresas y eventos especiales.
+        </p>
+
+        <div class="btr">
+            <button type="button" class="btn btn-primary pe-2"><img src="{{ url_for('static', filename='imagenes/logot.png') }}" alt="t" width="50px" height="50px"> Todos</button>
+            <button type="button" class="btn btn-secondary"><img src="{{ url_for('static', filename='imagenes/hp.png') }}" width="50px" height="50px" alt="hp"></button>
+            <button type="button" class="btn btn-success"><img src="{{ url_for('static', filename='imagenes/asus.png') }}" width="50px" height="50px" alt="asus"></button>
+            <button type="button" class="btn btn-danger"><img src="{{ url_for('static', filename='imagenes/dell.png') }}" width="50px" height="50px" alt="dell"></button>
+            <button type="button" class="btn btn-warning"><img src="{{ url_for('static', filename='imagenes/mac.png') }}" width="50px" height="50px" alt="apple"></button>
+            <button type="button" class="btn btn-info"><img src="{{ url_for('static', filename='imagenes/len.png') }}" width="50px" height="50px" alt="lenovo"></button>
+            <button type="button" class="btn btn-light"><img src="{{ url_for('static', filename='imagenes/acer.png') }}" width="50px" height="50px" alt="acer"></button>
+            <button type="button" class="btn btn-dark"><img src="{{ url_for('static', filename='imagenes/samsung.png') }}" width="50px" height="50px" alt="acer"></button>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Opción 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='imagenes/hp1.jpeg') }}" class="card-img-top" alt="Laptop Estándar">
+                <div class="card-body">
+                    <h5 class="card-title">Hp Probook 440 G1</h5>
+                    <p class="card-text">
+                        Potente y confiable, ideal para trabajo o estudio:
+                        <ul>
+                          <li>💽 Disco Sólido SSD de 512 GB – velocidad y almacenamiento al máximo</li>
+                          <li>🧠 16 GB de Memoria RAM – rendimiento fluido para multitareas</li>
+                          <li>🖥️ Pantalla de 14"</li>
+                          <li>⚙️ Procesador Intel Core i5</li>
+                          <li>🕒 Batería en buen estado</li>
+                          <li>🧳 Diseño compacto y profesional</li>
+                        </ul>
+                    </p>
+                    <button class="btn w-100 mt-5 ">Mas Informacion</button>
+                </div>
+                </div>
+            </div>
+
+            <!-- Opción 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='imagenes/pcm.jpeg') }}" class="card-img-top pb-5 pt-2" alt="Laptop Profesional">
+                <div class="card-body">
+                    <h5 class="card-title pt-5">Dell Optiplex 750</h5>
+                    <p class="card-text mb-5">
+                        Veloz y Potente, ideal para tu oficina:
+                        <ul>
+                            <li>💽 Disco Sólido SSD de 512 GB – velocidad y almacenamiento al máximo</li>
+                            <li>🧠 16 GB de Memoria RAM – rendimiento fluido para multitareas</li>
+                            <li>🖥️ Monitor de 19"</li>
+                            <li>⚙️ Procesador Intel Core i5</li>
+                            <li>🖱️ Mouse inalambrico Dell</li>
+                            <li>⌨️ Teclado inalambrico Dell</li>
+                        </ul>
+                    </p>
+                    <button class="btn w-100 mt-5">Mas Informacion</button>
+                </div>
+                </div>
+            </div>
+
+            <!-- Opción 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='imagenes/asus1.jpeg') }}" class="card-img-top" alt="Estaciones de trabajo">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus Rog Strix</h5>
+                        <p class="card-text">
+                            Potente y agresivo, perfecto para trabajos de alto rendimiento:
+                            <ul>
+                              <li>💽 Disco Sólido SSD de 1000 GB – velocidad y almacenamiento al máximo</li>
+                              <li>🧠 32 GB de Memoria RAM – rendimiento fluido para multitareas</li>
+                              <li>🕒 Tarjeta de Video de 8GB – para correr todos tus juegos o programas al maximo</li>
+                              <li>🖥️ Pantalla de 16"</li>
+                              <li>⚙️ Procesador Intel Core i7</li>
+                              <li>👾 Diseño Gamer</li>
+                            </ul>
+                        </p>
+                        <button class="btn w-100">Mas Informacion</button>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Opción 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='imagenes/mac1.jpeg') }}" class="card-img-top" alt="Estaciones de trabajo">
+                    <div class="card-body">
+                        <h5 class="card-title">Estaciones de Trabajo</h5>
+                        <p class="card-text">
+                            Potente, segura y elegante, ideal para diseñar:
+                            <ul>
+                              <li>💽 Disco Sólido SSD de 512 GB – velocidad y almacenamiento al máximo</li>
+                              <li>🧠 16 GB de Memoria RAM – rendimiento fluido para multitareas</li>
+                              <li>🖥️ Pantalla de 14" Retina 4k</li>
+                              <li>⚙️ Procesador Intel Core i5</li>
+                              <li>🔋 Batería en buen estado</li>
+                              <li>🧳 Diseño delgado y profesional</li>
+                            </ul>
+                        </p>
+                        <button class="btn w-100">Mas Informacion</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
